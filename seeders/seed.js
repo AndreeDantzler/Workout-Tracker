@@ -1,4 +1,6 @@
 let mongoose = require("mongoose");
+const logger = require("morgan");
+
 let db = require("../models");
 
 mongoose.connect("mongodb://localhost/workout", {
