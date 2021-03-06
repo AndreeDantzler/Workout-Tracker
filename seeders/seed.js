@@ -1,5 +1,4 @@
 let mongoose = require("mongoose");
-const logger = require("morgan");
 
 let db = require("../models");
 
@@ -12,11 +11,6 @@ mongoose.connect(
     useFindAndModify: false
   }
 );
-
-// mongoose.connect("mongodb://localhost/workout", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
 
 let workoutSeed = [
   {
